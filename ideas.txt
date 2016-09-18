@@ -1,0 +1,39 @@
+use quant values, but attach non-quant phrase types to tags
+
+call:
+(animal) (calls) in the key of (F)
+
+general:
+(animal) can't stop (verb)ing or it will die
+if you (verb) an (animal)'s (body part), it can't (verb)
+(animal) can (verb) over X times per day
+
+eating:
+(carnivore) can eat a whole (animal) in one sitting
+(carnivore) can eat up to X (animal)s in one day
+
+life cycle:
+a baby (animal) can fit in the palm of your hand
+
+population:
+in the average acre of (habitat), there are over X (animal)s
+
+body:
+(animal) has over X muscles in its (body part)
+(animal) can regrow lost (body part)s
+
+compound eye:
+an (animal)s compound eyes have over X lenses
+
+poison:
+one (amount) of an (animal)'s poison is enough to kill an adult (animal)
+
+mammal:
+[an (animal) / a (group) of (animals)] can produce X liters of milk per day
+
+elimination:
+(animal)s poop X times per day
+
+vision:
+(animal)s can only see X colors
+(animal)s can see X different colors

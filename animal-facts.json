@@ -1,0 +1,152 @@
+{
+
+	"animals": [
+
+		{
+			"name": "eagle",
+			"categories": ["raptor"],
+			"verbs": [],
+			"objects": {
+				"prey": ["prey"]
+			},
+			"young_name": "chick",
+			"group_name": "flock"
+		}, {
+			"name": "pelican",
+			"categories": ["fisher-bird"],
+			"verbs": ["hold"],
+			"verb_contexts": {
+				"dive": ["while fishing, %point", "while hunting, %point", "%point while hunting for %prey"]
+			},
+			"objects": {
+				"prey": ["fish"]
+			},
+			"young_name": "chick",
+			"group_name": "flock"
+		}
+
+	],
+	"categories": {
+		"bird": {
+			"tags": ["has_eyes", "has_bones", "has_heart", "has_wings", "has_feathers", "has_beak", "lays_eggs"]
+		},
+		"raptor": {
+			"categories": ["bird"],
+			"verbs": ["swoop", "spot_prey"]
+		},
+		"fisher-bird": {
+			"categories": ["bird"],
+			"verbs": ["swoop", "spot_prey", "dive"]
+		},
+		"yard-bird": {
+			"categories": ["bird"],
+			"verb_exceptions": ["fly"],
+			"verbs": ["peck"]
+		}
+	},
+	"tags": {
+
+		"has_bones": {
+			"verbs": ["bone_count"]
+		},
+		"has_heart": {
+			"verbs": ["heart_beats", "heart_pumps"]
+		},
+		"has_eyes": {
+			"verbs": []
+		},
+		"has_wings": {
+			"verbs": ["fly", "flap_wings"]
+		},
+		"has_feathers": {
+			"verbs": ["have_feathers"]
+		},
+		"has_beak": {
+			"verbs": []
+		},
+		"lays_eggs": {
+			"verbs": ["lay_eggs"]
+		}
+	},
+	"verbs": {
+
+		"dive": {
+			"phrase": ["can dive %point underwater"],
+			"points": [{
+				"quality": "depth",
+				"unit": ["m"]
+			}]
+		},
+		"flap_wings": {
+			"phrase": ["can flap its wings %point"],
+			"points": [{
+				"quality": "frequency",
+				"unit": ["times"],
+				"frame": ["per", "each", "in_one"],
+                "frame_unit": ["second"]
+			}]
+		},
+		"fly": {
+			"phrase": ["can fly %point"],
+			"points": [{
+				"quality": "speed",
+				"unit": ["kmph"]
+			}, {
+				"quality": "distance",
+				"unit": ["km"],
+				"frame": ["per", "each", "in_one"],
+				"frame_unit": ["day"]
+			}]
+		},
+		"peck": {
+			"phrase": ["can peck with its beak %point"],
+			"points": [{
+				"quality": "force",
+				"unit": ["joules"]
+			}, {
+				"quality": "frequency",
+				"unit": ["times"],
+				"frame": ["per", "each", "in_one"],
+				"frame_unit": ["second"]
+			}]
+		},
+		"spot_prey": {
+			"phrase": ["can spot its prey %point"],
+			"points": [{
+				"quality": "distance",
+				"unit": ["km"]
+			}]
+		},
+		"swoop": {
+			"phrase": ["can swoop %point"],
+			"points": [{
+				"quality": "speed",
+				"unit": ["kmph"]
+			}]
+		}
+	},
+	"qualities": {
+
+		"depth": ["as deep as %unit"],
+		"distance": ["as far as %unit", "a distance of %unit", "a distance of up to %unit", "up to %unit"],
+		"force": ["with a fource of %unit"],
+		"frequency": ["as many as %unit", "as quickly as %unit"],
+		"speed": ["as fast as %unit", "at a speed of %unit", "at speeds of %unit", "up to %unit", "at speeds up to %unit"]
+	},
+	"units": {
+        "m": ["meters"],
+		"km": ["kilometers"],
+		"kmph": ["kilometers per hour"],
+		"times": ["times"],
+		"second": ["second"],
+		"minute": ["minute"],
+		"day": ["day"],
+		"lifetime": ["lifetime", "life"]
+	},
+	"frames": {
+		"per": ["per %frame_unit"],
+		"each": ["each %frame_unit", "every %frame_unit"],
+		"in_one": ["in one %frame_unit", "in a single %frame_unit"],
+		"its": ["in its %frame_unit", "in its %frame_unit"]
+	}
+}

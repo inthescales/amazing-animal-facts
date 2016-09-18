@@ -1,0 +1,39 @@
+movement types:
+run, swim, fly, dig
+
+actions:
+run
+swim
+fly
+dig
+jump
+kick
+bite
+butt
+lay eggs
+bear young
+flap wings
+chew
+spot
+smell
+
+all actions:
+survive temp
+survive rad
+live
+
+classes:
+aquatic - survive pressure
+fish - swim, fin muscles, tail muscles, lay eggs
+mammal - bear young
+reptile - lay eggs
+has_heart - pump blood, heart beat
+long_tongue - stretch tongue
+
+animal is:
+set of classes
+set of action -> object pairs
+
+action is:
+type (trans, intrans, reflex)
+measure unit
